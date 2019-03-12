@@ -75,7 +75,7 @@ $(document).ready( function() {
         });
 
         $(loadMore).click(function() {
-          let = maxHeight = $(gallery).css('max-height');
+          let maxHeight = $(gallery).css('max-height');
           $(gallery).css('max-height', "+=639px");
 
           if (maxHeight == "1299px") {
@@ -86,23 +86,26 @@ $(document).ready( function() {
 
 /////////HOVER-GALLERY-ITEM
     $('.gallery-item').hover(function() {
-      if ($(this).hasClass('graphic')) {
-        $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome graphic</p><p>awesome graphic</p></div></div>"));
-      }
-      if ($(this).hasClass('web')) {
-        $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome web-design</p><p>awesome web-design</p></div></div>"));
-      }
-      if ($(this).hasClass('wordpress')) {
-        $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome wordpress</p><p>awesome wordpress</p></div></div>"));
-      }
-      if ($(this).hasClass('landing')) {
-        $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome landing</p><p>awesome landing</p></div></div>"));
-      }
-    $('.portfolio-hover').hide().show('normal')
-  }, function() {
-    $(this).find(".portfolio-hover").remove();
-  }
-);
+        if ($(this).hasClass('graphic')) {
+            $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome graphic</p><p>awesome graphic</p></div></div>"));
+        }
+        if ($(this).hasClass('web')) {
+            $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome web-design</p><p>awesome web-design</p></div></div>"));
+        }
+        if ($(this).hasClass('wordpress')) {
+            $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome wordpress</p><p>awesome wordpress</p></div></div>"));
+        }
+        if ($(this).hasClass('landing')) {
+            $(this).append($("<div class='portfolio-hover'><div class='portfolio-links'><a href='#'><i class='fas fa-link'></i></a><a href='#'><i class='fas fa-search'></i></a></div><div class = 'portfolio-info'><p>awesome landing</p><p>awesome landing</p></div></div>"));
+        }
+        $('.portfolio-hover').animate({
+            bottom: 0,
+        },550)
+        },
+              function() {
+          $(this).find(".portfolio-hover").remove();
+        }
+    );
 
 
 ///////////SLIDER
