@@ -78,7 +78,7 @@ $(document).ready( function() {
           let maxHeight = $(gallery).css('max-height');
           $(gallery).css('max-height', "+=639px");
 
-          if (maxHeight == "1299px") {
+          if (maxHeight == "1278px") {
             $(loadMore).text("No Content").addClass("noContent");;
           }
         });
