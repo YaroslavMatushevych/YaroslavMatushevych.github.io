@@ -70,7 +70,7 @@ $(document).ready( function() {
                 $(loadMore).html("<i class='fas fa-plus'></i>Load More").removeClass("noContent");
                 $(gallery).css('max-height','639px');
             }else {
-              $(loadMore).text("No Content").addClass("noContent");;
+              $(loadMore).text("No Content").addClass("noContent");
             }
         });
 
@@ -79,7 +79,7 @@ $(document).ready( function() {
           $(gallery).css('max-height', "+=639px");
 
           if (maxHeight == "1278px") {
-            $(loadMore).text("No Content").addClass("noContent");;
+            $(loadMore).text("No Content").addClass("noContent");
           }
         });
     });
