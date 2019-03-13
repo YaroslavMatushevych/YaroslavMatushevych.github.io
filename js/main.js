@@ -68,7 +68,7 @@ $(document).ready( function() {
             }, 300);
             if($("."+selectedClass).length > 12){
                 $(loadMore).html("<i class='fas fa-plus'></i>Load More").removeClass("noContent");
-                $(gallery).css('max-height','660px');
+                $(gallery).css('max-height','639px');
             }else {
               $(loadMore).text("No Content").addClass("noContent");;
             }
