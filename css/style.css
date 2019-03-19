@@ -2,7 +2,7 @@
     background: url("../img/Sections background/section-1(header).jpg") no-repeat fixed;
     background-size: cover;
     min-width: 1200px;
-    min-height: 85vh;
+    min-height: 83vh;
     color: #fff;
     font-family: Montserrat, sans-serif;
 }
@@ -37,6 +37,11 @@
 .green-text {
     color: #18cfab;
     font-weight: 700;
+}
+
+.logo {
+    width: max-content;
+    margin-right: 10px;
 }
 
 #logo-picture {
@@ -126,7 +131,7 @@
     flex-direction: column;
     text-align: center;
     flex-basis: 60%;
-    min-height: 85vh;
+    min-height: 83vh;
     padding-top: 9.5vh;
     box-sizing: border-box;
 }

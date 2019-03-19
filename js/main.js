@@ -76,9 +76,9 @@ $(document).ready( function() {
 
         $(loadMore).click(function() {
           let maxHeight = $(gallery).css('max-height');
-          $(gallery).css('max-height', "+=639px");
+          $(gallery).css('max-height', "+=618px");
 
-          if (maxHeight == "1278px") {
+          if (maxHeight == "1257px") {
             $(loadMore).text("No Content").addClass("noContent");
           }
         });
